@@ -1,0 +1,140 @@
+body {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: firebrick;
+}
+
+
+
+#title {
+    height: 150px;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(255, 183, 0);
+}
+
+    #titleText {
+        font-size: 150px;
+        margin: 11px 0 0 50px;
+        color: rgb(255, 137, 1);
+    }
+
+
+
+#content {
+    height: 540px;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(254, 226, 80);
+}
+
+    #contentLeft {
+        height: 540px;
+        width: 20%;
+        overflow: hidden;
+        float: left;
+        background-color: rgb(255, 202, 80);
+        font-size: 20px;
+    }
+
+        h4 {
+            font-size: 25px;
+            color: rgb(188, 94, 0);
+            margin-left: 50px;
+            margin-top: 50px
+        }
+
+        .menuItems {
+            display: block;
+            margin-left: 50px;
+            margin-bottom: 15px;
+        }
+
+        #buttonXHTML {
+            background-color: transparent;
+            background-repeat: no-repeat;
+            background-image: url("buttonXHTML.png");
+            height: 32px;
+            width: 88px;
+            border: none;
+            outline: none;
+            margin-left: 50px;
+            margin-top: 50px;
+        }
+
+        #buttonXHTML:hover {
+            margin-left: 40px;
+            cursor: pointer;
+        }
+
+        #buttonCSS {
+            background-color: transparent;
+            background-repeat: no-repeat;
+            background-image: url("buttonCSS.png");
+            height: 32px;
+            width: 88px;
+            border: none;
+            outline: none;
+            margin-left: 50px;
+        }
+
+        #buttonCSS:hover {
+            margin-left: 40px;
+            cursor: pointer;
+        }
+
+    #contentRight {
+        height: 540px;
+        width: 80%;
+        overflow: auto;
+        float: right;
+    }
+
+        h2 {
+            color: rgb(188, 94, 0);
+            font-size: 30px;
+            margin: 50px 50px 30px 50px;
+            font-family: 'arial black';
+        }
+
+        #contentRightP1 {
+            font-size: 20px;
+            margin: 0 50px 30px 50px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        h3 {
+            color: rgb(188, 94, 0);
+            font-size: 25px;
+            margin: 0 50px 30px 50px;
+            font-family: 'arial black';
+        }
+
+        #contentRightP2 {
+            font-size: 20px;
+            margin: 0 50px 0 50px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+
+
+#footer {
+    height: 50px;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(255, 183, 0);
+}
+
+    #footerText {
+        font-size: 20px;
+        margin: 0 0 0 50px;
+        line-height: 50px;
+        vertical-align: middle;
+    }

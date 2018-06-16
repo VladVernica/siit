@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("https://goo.gl/wsCQPU");
+    background-size: 100%;
+    margin: 0;
+}
+
+#top {
+    height: 150px;
+    width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    background-color: rgb(200, 230, 250, 0.9);
+}
+
+    #topTitle {
+        margin: 50px 0 10px 50px;
+        font-size: 30px;
+    }
+
+    #topText {
+        margin-left: 50px;
+        font-size: 15px;
+    }
+
+
+
+#bottom {
+    height: 600px;
+    width: 1000px;
+    margin: auto;
+    margin-top: 0 !important;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255, 0.9);
+}
+
+    #bottomUp {
+        height: 180px;
+        width: 930px;
+        margin: auto;
+        margin-top: 30px;
+        overflow: hidden;
+        background-color: rgb(190, 190, 190, 0.3);
+    }
+
+        #email {
+            font-size: 20px;
+            margin: 30px 0 15px 30px;
+        }
+
+        #emailInput {
+            height: 30px;
+            width: 300px;
+            margin-left: 30px;
+            padding-left: 10px;
+        }
+
+        #emailInfo {
+            margin: 30px 0 0 30px;
+            font-size: 10px;
+            color: grey;
+        }
+
+    #bottomDown {
+        height: 360px;
+        width: 900px;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+        #name {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        #nameFirst {
+            height: 30px;
+            width: 140px;
+            padding-left: 10px;
+        }
+
+        #nameLast {
+            height: 30px;
+            width: 140px;
+            margin-left: 20px;
+            padding-left: 10px;
+        }
+
+        #newsletter {
+            font-size: 20px;
+            margin: 30px 0 15px 0;
+        }
+
+        #RB1 {
+            margin: 15px 0 5px 0;
+        }
+
+        #submitButton {
+            height: 30px;
+            width: 100px;
+            margin-top: 45px;
+            background-color: lightblue;
+            border: none; 
+        }
+
+        #submitText {
+            color: rgb(144, 196, 122);
+            margin-top: 45px;
+            margin-left: 10px;
+        }
+
+        a {
+            color: inherit;
+        }

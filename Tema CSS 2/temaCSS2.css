@@ -1,0 +1,176 @@
+body {
+    background-color: rgb(224, 212, 138);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#title {
+    width: 730px;
+    height: 170px;
+    background-color: rgb(190, 218, 46);
+    margin: auto;
+    margin-top: 10px;
+}
+
+    #titleText {
+        float: right;
+        margin-top: 20px;
+        margin-right: 110px;
+    }
+
+    h2, h5 {
+        font-weight: normal;
+    }
+
+    h5 {
+        margin-top: -10px;
+    }
+
+#content {
+    width: 730px;
+    height: 560px;
+    background-color: rgb(253, 244, 211);
+    margin: auto;
+    margin-top: 5px;
+    padding-top: 10px;
+}
+
+    #contentTopMenu {
+        width: 710px;
+        height: 50px;
+        margin: auto;
+        background-color: rgb(234, 230, 203);
+        text-align: center;
+
+    }
+
+        .topMenuButtons {
+            line-height: 50px;
+            vertical-align: middle;
+            margin-left: 15px;
+            margin-right: 15px;
+            color: black;
+            text-decoration-line: none;
+            font-size: 15px;
+
+        }
+
+    #contentMain {
+        width: 710px;
+        height: 430px;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+        #mainMenu {
+            width: 175px;
+            height: 410px;
+            float: left;
+        }
+
+            .mainMenus {
+                width: 175px;
+                height: 200px;
+                margin-bottom: 10px;
+            }
+
+                .mainMenusTop {
+                    width: 175px;
+                    height: 40px;
+                    background-color: rgb(203, 222, 80);
+                }
+
+                    .mainMenusTopText {
+                        margin: 0 0 0 20px;
+                        line-height: 40px;
+                        font-size: 20px;
+                    }
+
+                .mainMenusBottom {
+                    width: 175px;
+                    height: 160px;
+                    margin-top: 0 !important;
+                    padding-top: 10px;
+                    background-color: rgb(240, 232, 195);
+                }
+
+                    .mainMenusBottomText1 {
+                        font-size: 11px;
+                        color: black;
+                        display: block;
+                        margin-left: 20px;
+                        line-height: 19px;
+                        vertical-align: bottom;
+                    }
+
+                    .mainMenusBottomText2 {
+                        font-size: 12px;
+                        margin: 10px;
+                    }
+            #mainMenusSpace {
+                height: 10px;
+                width: 175px;
+            }
+        #mainInfo {
+            width: 525px;
+            height: 430px;
+            float: right;
+        }
+            #mainInfoTop {
+                width: 525px;
+                height: 210px;
+                margin-bottom: 10px;
+            }
+            
+            #mainInfoBottom {
+                width: 525px;
+                height: 210px;
+            }
+
+                #mainInfoBottomLeft {
+                    width: 250px;
+                    height: 210px;
+                    float: left;
+                }
+
+                #mainInfoBottomRight {
+                    width: 250px;
+                    height: 210px;
+                    float: right;
+                }
+
+            .mainInfoTitle {
+                    margin: 0;
+                    line-height: 60px;
+                    margin-left: 10px;
+                    vertical-align: bottom;
+                    font-size: 20px;
+                }
+
+            .mainInfoText {
+                    margin: 10px;
+                    font-size: 12px;
+                }
+            .mainInfoButton {
+                width: 80px;
+                height: 40px;
+                margin-left: 10px;
+                background-color: rgb(190, 215, 53);
+                font-size: 12px;
+                font-weight: bold;
+            }
+
+
+    #contentFooter {
+        width: 710px;
+        height: 50px;
+        margin: auto;
+        text-align: center;
+        background-color: rgb(203, 222, 80);
+    }
+        #contentFooterText {
+            margin: 0;
+            font-size: 12px;
+            line-height: 50px;
+            vertical-align: middle;
+        }

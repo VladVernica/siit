@@ -1,0 +1,16 @@
+#top {
+    width: 505px;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+}
+
+#error {
+    margin-top: -20;
+}
+
+#bottom {
+    width: 505px;
+    margin: auto;
+    text-align: justify;
+}
