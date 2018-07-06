@@ -59,11 +59,11 @@ function temaJS06 (n) {
 
 function temaJS07 (n) {
     document.getElementById('t7n').value=0;
-    if (n==1) { alert(0); return 0; }
-    if (n==2) { alert(1); return 1; }
-    if (n==3) { alert(3); return 3; }
-    var sum=3;
-    var number=3;
+    if (n==1) { alert(1); return 1; }
+    if (n==2) { alert(3); return 3; }
+    if (n==3) { alert(6); return 6; }
+    var sum=6;
+    var number=4;
     var count=3;
     while (count<n) {
         var prim=0;

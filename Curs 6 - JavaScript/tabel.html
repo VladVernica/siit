@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <script>
+            var sortingDirection;
+            var currentSortingColumn;
+            var listaClienti=[
+                {
+                    nume:"Nume1",
+                    prenume:"Prenume1",
+                    varsta:29,
+                    telefon:["0758066000"],
+                    initialOrder: 1
+                },
+                {
+                    nume:"Nume3",
+                    prenume:"Prenume3",
+                    varsta:31,
+                    telefon:["0758000000"],
+                    initialOrder: 2
+                },
+                {
+                    nume:"Nume2",
+                    prenume:"Prenume2",
+                    varsta:30,
+                    telefon:["0758000000","0758000000"],
+                    initialOrder: 3
+                }               
+            ];
+            function displayTable (list) {
+                var body = document.querySelector ("table tbody");
+                var generatedBody="";
+                for (let i=0; i<list.length; ++i) {
+                    generatedBody+= `
+                        <tr>
+                            <td class="sortable nume">${list[i].nume}</td>
+                            <td class="sortable prenume">${list[i].prenume}</td>
+                            <td class="sortable varsta">${list[i].varsta}</td>
+                            <td>${list[i].telefon}</td>
+                        </tr>
+                        `;
+                }
+                body.innerHTML = generatedBody;
+            }
+            function doSortingBy (column) {
+                sortingDirection = getNextSortingDirection(column);
+                if(!sortingDirection) {
+                    column='initialOrder';
+                }
+                listaClienti.sort(function(a,b){
+                    if(sortingDirection=='dsc') {
+                        if(a[column]>b[column]) return -1;
+                        if(a[column]<b[column]) return 1;
+                        if(a[column]==b[column]) return 0;
+                    }
+                    else {
+                        if(a[column]>b[column]) return 1;
+                        if(a[column]<b[column]) return -1;
+                        if(a[column]==b[column]) return 0;
+                    }
+                })
+            }
+            function getNextSortingDirection (column) {
+                if(currentSortingColumn!=column) {
+                    sortingDirection=undefined;
+                    currentSortingColumn=column;
+                }
+                if(!sortingDirection) return 'asc';
+                if(sortingDirection=='asc') return 'dsc';
+                if(sortingDirection=='dsc') return undefined;
+            }
+            function applySortingColors (column) {
+                let columnElementsToDeleteColor = document.querySelectorAll('.sortable');
+                for (let i=0; i<columnElementsToDeleteColor.length; ++i) {
+                    columnElementsToDeleteColor[i].classList.remove('asc');
+                    columnElementsToDeleteColor[i].classList.remove('dsc');
+                }
+                let columnElementsToAppyColor = document.querySelectorAll(`.${column}`);
+                for (let i=0; i<columnElementsToAppyColor.length; ++i) {
+                    columnElementsToAppyColor[i].classList.add(sortingDirection);
+                }
+            }
+        </script>
+        <style>
+            th {
+                min-width: 100px;
+            }
+            .sortare:hover {
+                cursor: pointer;
+            }
+            .asc {
+                background: greenyellow;
+            }
+            .dsc {
+                background: red;
+            }
+        </style>
+    </head>
+    <body onload="displayTable(listaClienti);">
+        <table border="1">
+            <thead>
+                <th class="sortable sortare nume" onclick="doSortingBy('nume'); displayTable(listaClienti); applySortingColors('nume');">Nume</th>
+                <th class="sortable sortare prenume" onclick="doSortingBy('prenume'); displayTable(listaClienti); applySortingColors('prenume');">Prenume</th>
+                <th class="sortable sortare varsta" onclick="doSortingBy('varsta'); displayTable(listaClienti); applySortingColors('varsta');">Varsta</th>
+                <th>Telefon</th>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </body>
+</html>
