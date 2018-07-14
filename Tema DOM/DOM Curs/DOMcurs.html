@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>DOM Curs</title>
+        <link rel="stylesheet" type="text/css" href="DOMcurs.css" />
+        <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Cairo' rel='stylesheet'>
+        <script src="DOMcurs.js"></script>
+    </head>
+
+    <body onload="displayTable(clientsList);">
+        <table>
+            <thead>
+                <th class="sortable sort nume" onclick="doSortingBy('nume'); displayTable(clientsList); applySortingColors('nume');">Nume</th>
+                <th class="sortable sort prenume" onclick="doSortingBy('prenume'); displayTable(clientsList); applySortingColors('prenume');">Prenume</th>
+                <th class="sortable sort varsta" onclick="doSortingBy('varsta'); displayTable(clientsList); applySortingColors('varsta');">Vârstă</th>
+                <th>Telefon</th>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </body>
+
+</html>

@@ -1,0 +1,57 @@
+body {
+    font-family: 'Cario', Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-image: url('https://goo.gl/M1uJvj');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+table {
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    border-collapse: collapse;
+    margin: auto;
+    margin-top: 200px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+th {
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    border-bottom-style: double;
+    border-bottom-width: 3px;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    vertical-align: middle;
+    font-family: 'Lobster', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+td {
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    width: 150px;
+    height: 25px;
+    line-height: 25px;
+    vertical-align: middle;
+    font-size: 15px;
+}
+
+.sort:hover {
+    cursor: pointer;
+    color: firebrick;
+    font-size: 22px;
+}
+
+.ascendent {
+    background-color: lightgreen;
+}
+
+.descendent {
+    background-color: lightsalmon;
+}
